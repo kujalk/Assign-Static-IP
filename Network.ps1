@@ -54,7 +54,7 @@ Set-DnsClientServerAddress -InterfaceAlias $name -ServerAddresses "ddns1","ddns2
 #Replacing with actual variables	
 $script_final=$script_final.Replace('dIP',$IP).Replace('dsub',$sub).Replace('ddg',$dg).Replace('ddns1',$dns1).Replace('ddns2',$dns2)
 
-		    #Setting the execution policy in the VM
+		        #Setting the execution policy in the VM
 			Invoke-VMScript -VM $vm_name -ScriptText 'set-executionpolicy bypass' -GuestUser $UserVM  -GuestPassword $PasswordVM -ScriptType PowerShell
 			#Executing the script located in shared folder
 			Invoke-VMScript -VM $vm_name -ScriptText  $script_final -GuestUser $UserVM  -GuestPassword $PasswordVM -ScriptType PowerShell
