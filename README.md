@@ -1,5 +1,5 @@
 # Assign-Static-IP
-Assigning static IP and changing the network of Windows 2012/2016 VMs running in VMWare through a Script
+Assigning static IP and changing the network of Windows 2012/2016 VMs running in VMWare through PowerShell Script
 
 
 Scenario -
@@ -9,4 +9,5 @@ Assume there are multiple VMs running with Windows 2016/2012 OS and receive thei
 Requirements -
 
 Make sure VMware Tools are installed in all VMs
+
 Create a csv file as given below, to include all necessary details (Static  IP Address and other details)
